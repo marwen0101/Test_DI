@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "building .... we are here wait"
-                echo $M2_HOME
+                echo "M2_HOME = ${M2_HOME}"
             }
         }
     }
