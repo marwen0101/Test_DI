@@ -13,6 +13,7 @@ object NDriver {
   }
   
   def stopSparkContext {
+    println("ok")
     if (!sc.isStopped) sc.stop()
   }
   
