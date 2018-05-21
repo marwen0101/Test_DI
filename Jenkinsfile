@@ -10,6 +10,7 @@ pipeline {
 		sh '''
                 echo "building .... we are here wait"
                 echo "M2_HOME = ${M2_HOME}"
+		export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 	        '''
             }
         }
