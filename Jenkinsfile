@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "building .... we are here wait"  
+                echo "building .... we are here wait"
+                mvn test
             }
         }
     }
